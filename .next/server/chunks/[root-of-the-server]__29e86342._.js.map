@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Abigail/OneDrive/Documents/commsult/guided/test-app/src/app/api/auth/%5B...nextauth%5D/route.js"],"sourcesContent":["import NextAuth from \"next-auth\";\r\nimport CredentialsProvider from \"next-auth/providers/credentials\";\r\n\r\nconst authHandler = NextAuth({\r\n    providers: [\r\n        CredentialsProvider({\r\n            name: \"Credentials\",\r\n            credentials:{\r\n                email:{label:\"email\", type:\"text\"},\r\n                password:{label:\"password\", type:\"password\"}\r\n            },\r\n            async authorize(credentials) {\r\n                try {\r\n                    return null\r\n                } catch (e) {\r\n                    return null\r\n                }\r\n            }\r\n        })\r\n    ],\r\n    // pages:{\r\n    //     signIn: '/login'\r\n    // }\r\n})\r\n\r\nexport {authHandler as GET, authHandler as POST};"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAGA,MAAM,cAAc,SAAS;IACzB,WAAW;QACP,oBAAoB;YAChB,MAAM;YACN,aAAY;gBACR,OAAM;oBAAC,OAAM;oBAAS,MAAK;gBAAM;gBACjC,UAAS;oBAAC,OAAM;oBAAY,MAAK;gBAAU;YAC/C;YACA,MAAM,WAAU,WAAW;gBACvB,IAAI;oBACA,OAAO;gBACX,EAAE,OAAO,GAAG;oBACR,OAAO;gBACX;YACJ;QACJ;KACH;AAIL","debugId":null}}]
+}
